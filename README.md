@@ -1,4 +1,4 @@
-# routing_budgeted_evaluation_101b5aae
+# job_preemption_fairness_budgeted_eval
 
 （AI基础设施场景）作业抢占与调度公平性在不同数据分布下是否稳健？用路由与负载分布比较各分布下的表现差异。
 
@@ -15,9 +15,9 @@
 仅依赖 Python 标准库。
 
 ```bash
-python routing_budgeted_evaluation_101b5aae.py --help
-python routing_budgeted_evaluation_101b5aae.py --input sample.txt
-python routing_budgeted_evaluation_101b5aae.py --input sample.txt --json
+python job_preemption_fairness_budgeted_eval.py --help
+python job_preemption_fairness_budgeted_eval.py --input sample.txt
+python job_preemption_fairness_budgeted_eval.py --input sample.txt --json
 ```
 
 输入文件按行解析。协议「预算内评测」使用分隔符 `,` 区分标签与载荷。
@@ -50,7 +50,7 @@ python routing_budgeted_evaluation_101b5aae.py --input sample.txt --json
 ## 复现步骤
 
 1. 按上面的分隔符准备输入文件，每行一条样本；
-2. 运行 `python routing_budgeted_evaluation_101b5aae.py --input sample.txt --json`；
+2. 运行 `python job_preemption_fairness_budgeted_eval.py --input sample.txt --json`；
 3. 记录运行环境、输入文件与完整输出；
 4. **未运行的指标不要引用**：本仓库只提供测量方法与判定规则，
    不预填任何实测数字。填入实测值前请确认对应命令与输入一致。
